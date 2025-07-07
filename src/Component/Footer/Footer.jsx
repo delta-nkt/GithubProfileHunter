@@ -1,0 +1,107 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
+    return (
+        <footer className="bg-white border-y">
+            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div className="md:flex md:justify-between">
+                    <div className="mb-5 md:mb-0">
+                        <Link to="/" className="flex items-center">
+                            <img
+                                src="../logo4.png"
+                                className="mr-3 h-20 w-30"
+                                alt="Logo"
+                            />
+                        </Link>
+                    </div>
+                    <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                            <ul className="text-gray-500 font-medium">
+                                <li className="mb-4">
+                                    <Link to="/" className="hover:underline">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about" className="hover:underline">
+                                        About
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <ul className="text-gray-500 font-medium">
+                                <li className="mb-4">
+                                    <a
+                                        href="https://github.com/delta-nkt"
+                                        className="hover:underline"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Github
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/nikit-choudhary-ab1893218/"
+                                        className="hover:underline"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+                            <ul className="text-gray-500 font-medium">
+                                <li className="mb-4">
+                                    <Link to="/privacy" className="hover:underline">
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/terms" className="hover:underline">
+                                        Terms &amp; Conditions
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                <div className="sm:flex sm:items-center sm:justify-between">
+                    <span className="text-sm text-gray-500 sm:text-center">
+                        © 2025
+                        <a href="https://myportfolio-58cba.web.app/" className="hover:underline">
+                            Nikit choudhary
+                        </a>
+                        . All Rights Reserved.
+                    </span>
+                    <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                        <a href="https://x.com/Nikit_delta93" className="text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer">
+                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.856 2.01-.857 3.17 0 2.188 1.115 4.116 2.823 5.247a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.058 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z"/></svg>
+                            <span className="sr-only">Twitter</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nikit-choudhary-ab1893218/" className="text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer">
+                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                            <span className="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="https://instagram.com/the_floatingdelta?igsh=N3FzcnNKODNuajlk" className="text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer">
+                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.425 3.678 1.406c-.98.98-1.274 2.092-1.334 3.374C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.06 1.282.354 2.394 1.334 3.374.98.98 2.092 1.274 3.374 1.334C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.06 2.394-.354 3.374-1.334.98-.98 1.274-2.092 1.334-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.06-1.282-.354-2.394-1.334-3.374-.98-.98-2.092-1.274-3.374-1.334C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                            <span className="sr-only">Instagram</span>
+                        </a>
+                        <a href="https://myportfolio-58cba.web.app/" className="text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer">
+                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+                            <span className="sr-only">Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}
